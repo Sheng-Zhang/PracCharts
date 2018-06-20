@@ -14,6 +14,10 @@
 		F3C4CCF620DA6C8200B92538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C4CCF520DA6C8200B92538 /* Assets.xcassets */; };
 		F3C4CCF920DA6C8200B92538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C4CCF720DA6C8200B92538 /* LaunchScreen.storyboard */; };
 		F3C4CD0420DA6C8200B92538 /* PracChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C4CD0320DA6C8200B92538 /* PracChartsTests.swift */; };
+		F3C4CD0F20DA6C9600B92538 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = F3C4CD0E20DA6C9600B92538 /* Cartfile */; };
+		F3C4CD1520DA6EE700B92538 /* Async.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C4CD1220DA6EE700B92538 /* Async.framework */; };
+		F3C4CD1620DA6EE700B92538 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C4CD1320DA6EE700B92538 /* Alamofire.framework */; };
+		F3C4CD1720DA6EE700B92538 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C4CD1420DA6EE700B92538 /* Charts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		F3C4CCFF20DA6C8200B92538 /* PracChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C4CD0320DA6C8200B92538 /* PracChartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracChartsTests.swift; sourceTree = "<group>"; };
 		F3C4CD0520DA6C8200B92538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C4CD0E20DA6C9600B92538 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		F3C4CD1220DA6EE700B92538 /* Async.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Async.framework; path = Carthage/Build/iOS/Async.framework; sourceTree = "<group>"; };
+		F3C4CD1320DA6EE700B92538 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		F3C4CD1420DA6EE700B92538 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C4CD1520DA6EE700B92538 /* Async.framework in Frameworks */,
+				F3C4CD1620DA6EE700B92538 /* Alamofire.framework in Frameworks */,
+				F3C4CD1720DA6EE700B92538 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +75,7 @@
 				F3C4CCEA20DA6C8100B92538 /* PracCharts */,
 				F3C4CD0220DA6C8200B92538 /* PracChartsTests */,
 				F3C4CCE920DA6C8100B92538 /* Products */,
+				F3C4CD1120DA6EE600B92538 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +91,7 @@
 		F3C4CCEA20DA6C8100B92538 /* PracCharts */ = {
 			isa = PBXGroup;
 			children = (
+				F3C4CD0E20DA6C9600B92538 /* Cartfile */,
 				F3C4CCEB20DA6C8100B92538 /* AppDelegate.swift */,
 				F3C4CCED20DA6C8100B92538 /* ViewController.swift */,
 				F3C4CCEF20DA6C8100B92538 /* Main.storyboard */,
@@ -99,6 +112,16 @@
 			path = PracChartsTests;
 			sourceTree = "<group>";
 		};
+		F3C4CD1120DA6EE600B92538 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C4CD1320DA6EE700B92538 /* Alamofire.framework */,
+				F3C4CD1220DA6EE700B92538 /* Async.framework */,
+				F3C4CD1420DA6EE700B92538 /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +132,7 @@
 				F3C4CCE420DA6C8100B92538 /* Sources */,
 				F3C4CCE520DA6C8100B92538 /* Frameworks */,
 				F3C4CCE620DA6C8100B92538 /* Resources */,
+				F3C4CD1020DA6D1B00B92538 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -182,6 +206,7 @@
 			files = (
 				F3C4CCF920DA6C8200B92538 /* LaunchScreen.storyboard in Resources */,
 				F3C4CCF620DA6C8200B92538 /* Assets.xcassets in Resources */,
+				F3C4CD0F20DA6C9600B92538 /* Cartfile in Resources */,
 				F3C4CCF120DA6C8100B92538 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -194,6 +219,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3C4CD1020DA6D1B00B92538 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Async.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3C4CCE420DA6C8100B92538 /* Sources */ = {
@@ -364,6 +408,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DK47E435A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PracCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,6 +430,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9DK47E435A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = PracCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
